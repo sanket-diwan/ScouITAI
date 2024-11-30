@@ -45,7 +45,7 @@ public class BaseTest {
         driver = TestDriverManager.getDriver();
 
         LoginPage loginPage=new LoginPage(driver);
-        landingPage = loginPage.login("Automation@mailinator.com", "Test@123");
+        landingPage = loginPage.login("automation@mailinator.com", "Test@123");
     }
 
     @AfterMethod

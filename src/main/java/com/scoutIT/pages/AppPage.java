@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 import java.sql.SQLOutput;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
 
 public class AppPage extends BasePage {
 
@@ -76,12 +76,13 @@ public class AppPage extends BasePage {
         Param1.sendKeys(param1);
         Param2.sendKeys(param2);
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,250)", "");
+        js.executeScript("window.scrollBy(0,850)", "");
         Submit.click();
         Thread.sleep(5000);
         return new LandingPage(this.driver);
 
     }
+
 
 
 
